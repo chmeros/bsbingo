@@ -123,12 +123,12 @@ body {
     align-items: center;
   }
   .game-grid {
-    max-width: 420px;
+    max-width: 395px;
     gap: 5px;
   }
   .square {
-    height: 80px;
-    width: 80px;
+    height: 75px;
+    width: 75px;
     font-size: 11px;
   }
 }
