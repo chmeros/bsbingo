@@ -131,4 +131,7 @@ body {
     width: 70px;
     font-size: 10px;
   }
+  .button-container button {
+    background-color: rgb(236, 236, 189);
+  }
 }
