@@ -20,7 +20,8 @@ body {
   align-items: center;
 }
 
-.topmessage input, .button-container button {
+.topmessage input,
+.button-container button {
   margin-top: 20px;
   margin-left: 20px;
   padding: 5px;
@@ -54,11 +55,12 @@ body {
   background-color: rgb(128, 233, 128);
 }
 
-.square:hover, .topmessage input:hover, .button-container button:hover {
+.square:hover,
+.topmessage input:hover,
+.button-container button:hover {
   cursor: pointer;
   background-color: rgb(128, 233, 128);
   transition: background-color 0.5s ease-out;
-
 }
 
 .retry-game {
@@ -119,7 +121,7 @@ body {
 /* Mobile */
 @media (max-width: 500px) {
   .game {
-    justify-content:start;
+    justify-content: start;
     align-items: center;
   }
   .game-grid {
@@ -131,7 +133,8 @@ body {
     width: 70px;
     font-size: 10px;
   }
-  .button-container button:active {
+  .button-container button:active,
+  .button-container button:hover {
     background-color: rgb(236, 236, 189);
   }
 }
