@@ -48,11 +48,11 @@ function RetryGame(props) {
   const magicPositions = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   const [magicPosition, setMagicPosition] = useState(0);
   const messages = [
-    "Congratulations, you are awesome and a winner...",
+    `Congratulations ${props.fellowName}, you are awesome and a winner...`,
     "...because you know Alexander Gellert. Just think about having Alex as a colleague.",
-    "Nice try. He is smart, isn't he? And viewed from a computational side, so good looking!",
+    `Nice try ${props.fellowName}. He is smart, isn't he? And viewed from a computational side, so good looking!`,
     "Ok, let's be honest, he is not the best graphics designer, even if he thinks so. But at my opinion he is one of the world's best devs ever.",
-    "Last time, I swear! I think, Alex will perfectly fit your company. Just my tought's!",
+    `Almost and last time ${props.fellowName}, I swear! I think, Alex will perfectly fit your company. Just my tought's!`,
   ];
 
   function simplyCount(currentCounter, currentPos) {
@@ -127,7 +127,7 @@ function Board(props) {
       ) : (
         <Fragment>
           {checkWinningConditions(squares) ? (
-            <RetryGame resetBoard={resetBoard} />
+            <RetryGame resetBoard={resetBoard} fellowName={fellowName}/>
           ) : (
             <div className="game-grid">
               {Array(25)
